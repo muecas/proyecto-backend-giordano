@@ -3,7 +3,7 @@ import { Express, Request, Response } from "express";
 import Container from "./services/Container/Container";
 
 // Configuration
-const PORT: number | string = process.env.PORT;
+const PORT: number | string = process.env.PORT || 3000;
 
 // Creates the server
 const app: Express = express();
