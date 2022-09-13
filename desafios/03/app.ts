@@ -1,5 +1,6 @@
 import express = require('express');
 import { Express, Request, Response } from "express";
+import { AddressInfo } from "net";
 import Container from "./services/Container/Container";
 
 // Configuration
@@ -10,7 +11,8 @@ const app: Express = express();
 
 // Listener
 const server = app.listen(PORT, () => {
-	console.log(`Servidor corriendo en puerto ${server.address().port}!`);
+	const { port } = server.address() as AddressInfo;
+	console.log(`Servidor corriendo en puerto ${port}!`);
 });
 
 // Error handler
