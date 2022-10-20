@@ -1,0 +1,24 @@
+{{#if products}}
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th scope="col" width="15%">Imagen</th>
+				<th scope="col">Título</th>
+				<th scope="col" width="25%">Precio</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each products}}
+				<tr>
+					<td class="align-middle"><img src="{{thumbnail}}" alt="" class="img-fluid"></td>
+					<td class="align-middle">{{name}}</td>
+					<td class="align-middle">{{price}}</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+{{else}}
+	<div class="alert alert-danger" role="alert">
+		<span>No hay productos ingresados</span>
+	</div>
+{{/if}}
