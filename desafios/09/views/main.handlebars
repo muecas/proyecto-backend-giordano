@@ -1,0 +1,61 @@
+<div class="container-fluid">
+	<div class="row mb-5">
+		<div class="col-12 mb-3 fs-3">Listado de productos</div>
+		<div class="col-12" id="products">
+			<div class="alert alert-danger" role="alert">
+				<span>No hay productos ingresados</span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12 mb-3 fs-3">Chat</div>
+		<div class="col-12">
+			<form class="row" name="messages">
+				<div class="col-12 mb-3">
+					<div id="messages" style="height: 250px; overflow-x: hidden; overflow-y: auto; background-color: #ececec; border-radius: .375rem; padding: .75rem; font-size: .75rem"></div>
+				</div>
+				<div class="col-6 mb-3">
+					<label for="first_name" class="form-label">Nombre</label>
+					<input type="text" class="form-control" id="first_name" name="first_name">
+					<div class="invalid-feedback">Ingresá un nombre válido</div>
+				</div>
+				<div class="col-6 mb-3">
+					<label for="last_name" class="form-label">Apellido</label>
+					<input type="text" class="form-control" id="last_name" name="last_name">
+					<div class="invalid-feedback">Ingresá un apellido válido</div>
+				</div>
+				<div class="col-6 mb-3">
+					<label for="age" class="form-label">Edad</label>
+					<input type="text" class="form-control" id="age" name="age">
+					<div class="invalid-feedback">Ingresá una edad válida</div>
+				</div>
+				<div class="col-6 mb-3">
+					<label for="alias" class="form-label">Alias</label>
+					<input type="text" class="form-control" id="alias" name="alias">
+					<div class="invalid-feedback">Ingresá un alias válido</div>
+				</div>
+				<div class="col-6 mb-3">
+					<label for="avatar" class="form-label">Avatar</label>
+					<input type="text" class="form-control" id="avatar" name="avatar">
+					<div class="invalid-feedback">Ingresá un avartar válido</div>
+				</div>
+				<div class="col-6 mb-3">
+					<label for="email" class="form-label">Email</label>
+					<input type="text" class="form-control" id="email" name="email">
+					<div class="invalid-feedback">Ingresá un email válido</div>
+				</div>
+				<div class="col-12 mb-3">
+					<label for="message" class="form-label">Mensaje</label>
+					<input type="text" class="form-control" id="message" name="message">
+					<div class="invalid-feedback">Ingresá tu mensaje</div>
+				</div>
+				<div class="col-12">
+					<button type="submit" class="btn btn-primary">Enviar mensaje</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<script src="socket.io/socket.io.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<script src="scripts/common.js"></script>
