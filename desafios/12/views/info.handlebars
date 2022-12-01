@@ -1,0 +1,24 @@
+<div class="container-fluid">
+	<div class="row mb-5">
+		<div class="col-12 mb-3 fs-3">Información entorno</div>
+		<div class="col-12">
+			<dl>
+				<dt>Plataforma</dt>
+				<dd>{{platform}}</dd>
+				<dt>Path de ejecución</dt>
+				<dd>{{execPath}}</dd>
+				<dt>PID</dt>
+				<dd>{{pid}}</dd>
+				<dt>Memoria (RSS)</dt>
+				<dd>{{memory}}</dd>
+				<dt>Versión de Node</dt>
+				<dd>{{version}}</dd>
+				<dt>Argumentos</dt>
+				<dd>{{argv}}</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+<script src="socket.io/socket.io.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<script src="scripts/common.js"></script>
