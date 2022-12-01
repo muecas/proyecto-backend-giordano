@@ -1,5 +1,8 @@
+type Randoms = {
+	[key: string]: number,
+};
 process.on?.('message', (message: { command: string | undefined, amount: number | undefined }) => {
-	const randoms: Array<number> = [];
+	const randoms: Randoms = {};
 	switch (message?.command) {
 		case 'start':
 			const amount: number = message?.amount || 1e8;
